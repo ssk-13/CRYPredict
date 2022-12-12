@@ -43,25 +43,31 @@ password=st.sidebar.text_input('Please enter your password', type='password')
 if choice == 'Signup':
     handle = st.sidebar.text_input('Please input your name',value='Default')
     submit = st.sidebar.button('Create my account')
+    st.sidebar.write('<br><br><br>support mail: <a href = "mailto:cryredic@gmail.com?subject = Feedback&body = Message">CRYPredic@gmail.com</a>',unsafe_allow_html=True)
 
     if submit:
         user = auth.create_user_with_email_and_password(email,password)
         st.success('Your account is created succesfully')
         st.balloons()
-
+        
         user =auth.sign_in_with_email_and_password(email,password)
+      
         db.child(user['localId']).child("Handle").set(handle)
         db.child(user['localId']).child("ID").set(user['localId'])
         st.title('welcome ' + handle)
         st.info('Login via login drop down selection')
+    else:
+        st.warning("already user/invalid email")
+       
 
 if choice == 'Login':
-    login=st.sidebar.checkbox('Login (check to login/uncheck to logout)')
+    login=st.sidebar.checkbox('(check to login/check to logout)')
+    st.sidebar.write('<br><br><br><br><br><br><br>support mail: CRYPredic@gmail.com',unsafe_allow_html=True)
     if login:
         user =auth.sign_in_with_email_and_password(email,password)
         st.write('<style>div.row-widget.stRadio> div{flex-direction:row;}</style>', unsafe_allow_html=True)
         bio =st.radio('Jump to',['Home','About'])
-
+    
 
         if bio == 'Home':
             START="2021-01-01"
@@ -90,10 +96,14 @@ if choice == 'Login':
             st.write(data.tail())
 
             def plot_raw_data():
-                fig=go.Figure()
-                fig.add_trace(go.Scatter(x=data['Date'],y=data['Open'],name='stock_open'))
-                fig.add_trace(go.Scatter(x=data['Date'],y=data['Close'],name='stock_close'))
-                fig.layout.update(title_text="Time Series Data",xaxis_rangeslider_visible=True)
+                
+                fig = go.Figure(data=[go.Candlestick(x=data['Date'],
+                open=data['Open'],
+                high=data['High'],
+                low=data['Low'],
+                close=data['Close'])])
+                
+                
                 st.plotly_chart(fig)
 
             plot_raw_data()
@@ -133,5 +143,5 @@ if choice == 'Login':
 
              st.write('we are using yfinance as our API to get live data and fbprophet as our model to get predictions.Our webapp UI runs using streamlit.')
 
-
+    
 
