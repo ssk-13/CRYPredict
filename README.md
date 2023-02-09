@@ -1,4 +1,4 @@
-# CRYPredict
+# CRYPredict (https://ssk-13-crypredict-main-y29oqw.streamlit.app/)
 Cry predict is an ML model which predict the future trend of crypto currency.
 It is build using Python.
 We used-
