@@ -3,7 +3,7 @@ Cry predict is an ML model which predict the future trend of crypto currency.
 It is build using Python.
 We used-
 YFinance(API)
-FBProphet(Model)
+FBProphet(Model) refer to install(https://stackoverflow.com/questions/53178281/installing-fbprophet-python-on-windows-10)
 Streamlit(FrontEnd)
 Firebase(Authentication)
 
