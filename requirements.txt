@@ -1,11 +1,10 @@
 plotly==5.10.0
 Pyrebase4==4.5.0
-streamlit==1.10.0
 yfinance==0.1.74
-numpy 
-cython
-scipy 
-pandas
-pystan 
-ephem
-fbprophet==0.7.1
+conda install libpython m2w64-toolchain -c msys2
+conda install numpy cython -c conda-forge
+
+conda install matplotlib scipy pandas -c conda-forge
+conda install pystan -c conda-forge
+conda install -c anaconda ephem
+conda install -c conda-forge fbprophet
