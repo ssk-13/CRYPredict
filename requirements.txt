@@ -1,33 +1,28 @@
 altair==4.2.2
-arviz @ file:///tmp/build/80754af9/arviz_1614019183254/work
 attrs==22.2.0
 backports.zoneinfo==0.2.1
 blinker==1.5
 cachetools==5.3.0
 certifi==2022.12.7
 cffi==1.15.1
-cftime @ file:///D:/bld/cftime_1663606578844/work
+
 charset-normalizer==3.0.1
 click==8.1.3
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
-convertdate @ file:///home/conda/feedstock_root/build_artifacts/convertdate_1642883757836/work
+
 cryptography==39.0.1
-cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
-Cython @ file:///C:/b/abs_0438epndxm/croots/recipe/cython_1663692771227/work
+
 decorator==5.1.1
 Deprecated==1.2.13
 distlib==0.3.6
 entrypoints==0.4
-ephem @ file:///C:/ci/ephem_1638960661180/work
-fbprophet @ file:///D:/bld/fbprophet_1599365723319/work
+
 filelock==3.9.0
 fonttools==4.25.0
 gcloud==0.18.3
 gitdb==4.0.10
 GitPython==3.1.30
 googleapis-common-protos==1.58.0
-hijri-converter @ file:///home/conda/feedstock_root/build_artifacts/hijri-converter_1653348285237/work
-holidays @ file:///home/conda/feedstock_root/build_artifacts/holidays_1675134011033/work
+
 httplib2==0.21.0
 idna==3.4
 importlib-metadata==6.0.0
@@ -35,20 +30,19 @@ importlib-resources==5.10.2
 Jinja2==3.1.2
 jsonschema==4.17.3
 jwcrypto==1.4.2
-kiwisolver @ file:///D:/bld/kiwisolver_1657953189205/work
-korean-lunar-calendar @ file:///home/conda/feedstock_root/build_artifacts/korean_lunar_calendar_1663341251025/work
+
 LunarCalendar==0.0.9
 lxml==4.9.2
 markdown-it-py==2.1.0
 MarkupSafe==2.1.2
-matplotlib @ file:///D:/bld/matplotlib-suite_1660353807034/work
+
 mdurl==0.1.2
 multitasking==0.0.11
 munkres==1.1.4
-netCDF4 @ file:///D:/bld/netcdf4_1661987345285/work
+
 numpy==1.21.6
 oauth2client==4.1.3
-packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1673482170163/work
+
 pandas==1.3.5
 Pillow==9.4.0
 pip==23.0
@@ -64,9 +58,9 @@ pycparser==2.21
 pycryptodome==3.17
 pydeck==0.8.0
 Pygments==2.14.0
-PyMeeus @ file:///home/conda/feedstock_root/build_artifacts/pymeeus_1670868433998/work
+
 Pympler==1.0.1
-pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1652235407899/work
+
 PyQt5==5.12.3
 PyQt5_sip==4.19.18
 PyQtChart==5.12
@@ -82,7 +76,7 @@ requests==2.28.2
 requests-toolbelt==0.10.1
 rich==13.3.1
 rsa==4.9
-scipy @ file:///C:/bld/scipy_1637806996411/work
+
 semver==2.13.0
 six==1.16.0
 smmap==5.0.0
@@ -90,9 +84,7 @@ streamlit==1.17.0
 tenacity==8.2.1
 toml==0.10.2
 toolz==0.12.0
-tornado @ file:///D:/bld/tornado_1656937938087/work
-tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1662214488106/work
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1665144421445/work
+
 tzdata==2022.7
 tzlocal==4.2
 urllib3==1.26.14
@@ -102,6 +94,6 @@ virtualenv-clone==0.5.7
 watchdog==2.2.1
 wincertstore==0.2
 wrapt==1.14.1
-xarray @ file:///home/conda/feedstock_root/build_artifacts/xarray_1614346479764/work
+
 yfinance==0.1.74
 zipp==3.13.0
