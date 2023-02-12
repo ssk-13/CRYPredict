@@ -40,7 +40,7 @@ mdurl==0.1.2
 multitasking==0.0.11
 munkres==1.1.4
 
-numpy==1.21.6
+numpy==1.22.0
 oauth2client==4.1.3
 
 pandas==1.3.5
